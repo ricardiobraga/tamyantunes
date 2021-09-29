@@ -1,0 +1,149 @@
+.main-home {
+    margin-top: 3rem;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #1c6975 , #2abfd5);
+
+    font-family: 'Yaldevi', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #1c6975;
+    
+    
+
+
+    /* background-image: url('./assets/base.jpg');
+    background-size: contain;    
+    background-repeat: no-repeat, repeat; */
+}
+
+.img-croppest {
+    height: 100vh;
+}
+
+
+
+.croppset-left{
+    visibility: visible;
+    left: 0;
+}
+.croppset-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.img-croppest-fotos {
+    width: 50rem; 
+    
+    
+}
+
+.img-croppest-logo  {       
+    visibility: hidden;
+    display: none;  
+}
+
+.img-container > p {
+    margin: 1rem;
+    text-align: center;
+    background: #dcecee;
+    border-radius: 10px 0 10px 0;
+    padding: .8rem;
+    width: 50rem; 
+    
+    
+    
+}
+
+.pix-info  {
+    margin-top: 4rem;
+    width: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.pix-info p {
+   
+    margin: 0;
+    
+    
+    font-size: 1rem;
+    color: #f3f3f3;
+}
+.pix-info > span {
+
+    font-size: 3rem;
+    background: #f3f3f3;
+    color: #1c6975;
+}
+.pix-info p >span {
+
+    font-size: 2rem;
+    background: #f3f3f3;
+    color: #1c6975;
+}
+
+@media only screen and  (max-width: 1410px) {
+    .main-home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-croppest {
+        height: 50vh;
+    }
+
+    .croppset-left {
+        visibility: hidden;
+        display: none;
+        
+    }
+
+    .croppset-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    
+    
+    }
+
+    .img-croppest-logo  {  
+        position: fixed;
+        top: 4rem;
+        left: -1rem;
+        visibility: visible;     
+        display: block;
+        width: 10rem;    
+    }
+
+    .img-container > p {       
+        width: 20rem;    
+    }
+
+    .img-croppest-fotos {
+        width: 30rem; 
+        
+        
+    }
+
+}
+

@@ -1,0 +1,13 @@
+.main-gorro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    width: 100vw;
+    height: 100vh;
+    background: rgb(86, 110, 88);
+
+    font-size: 6rem;
+    color: rgb(46, 59, 48);
+}
