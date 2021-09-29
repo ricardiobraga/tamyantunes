@@ -153,12 +153,12 @@
     }
 
     .img-croppest-logo  {  
-        position: relative;
-        margin-bottom: 3rem;
+        position: absolute;
+        top: 3rem;
         visibility: visible;     
         display: block;
-        width: 30rem; 
-        opacity: 1;   
+        width: 15rem; 
+          
     }
 
     .bg-mobile {
@@ -166,12 +166,12 @@
         display: block;
 
         position: absolute;
-        bottom: -3.4rem;
+        bottom: -10rem;
         border-radius: 10px 10px 0 0 ;
         height: 100%;
         width: 95%;
         background: #dcecee;
-        opacity: .8;
+        opacity: .85;
 
         
         
@@ -183,10 +183,10 @@
     }
 
     .img-container > p { 
-        margin-bottom: 3rem;      
+            
         width:80%; 
-
-        font-size: 3rem;
+        margin-top: 9rem;
+        font-size: 1.5rem;
         font-weight: 400;
         color: #1c6975;   
         
@@ -201,7 +201,7 @@
     }
 
     .pix-info  {
-        margin-top: 3rem;
+        margin-top: 2rem;
         
         display: flex;
         align-items: center;
@@ -211,7 +211,7 @@
 
     .pix-info > span {
 
-        font-size: 3rem;
+        font-size: 2rem;
         background: #f3f3f3;
         color: #1c6975;
         height: 100%;
@@ -219,14 +219,14 @@
     }
 
     .pix-info > p {
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 600;
         color: #1c6975;
     }
 
     .pix-info p > span {
     
-        font-size: rem;
+        font-size: 1.2rem;
         background: #f3f3f3;
         color: #1c6975;
     }

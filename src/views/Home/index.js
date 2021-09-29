@@ -9,6 +9,10 @@ import croppestLogo from './assets/croppest-logo.png'
 
 
 
+
+
+
+
 // <img className="img-base" src={foto} alt='foto' />
 
 const Home = () => {
