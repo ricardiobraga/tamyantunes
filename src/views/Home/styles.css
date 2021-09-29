@@ -105,7 +105,137 @@
     display: none;
 }
 
-@media only screen and  (max-width: 1410px) {
+@media screen and  (max-width: 1024px) {
+
+
+    .main-home {
+        
+        display: flex;
+        flex-direction: column;
+
+        
+
+        
+        
+    }
+
+    .img-croppest {
+        height: 50vh;
+    }
+
+    .croppset-left {
+        visibility: hidden;
+        display: none;
+        
+    }
+
+    .croppset-right{
+        
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+
+        background-image: url('./assets/croppest-cortado-s-logo.png');
+        background-size: cover;    
+        background-repeat: no-repeat, repeat;
+
+        z-index: 1;
+
+        overflow: hidden;
+        
+    
+    
+    }
+
+    .img-croppest-logo  {  
+        position: absolute;
+        top: 3rem;
+        visibility: visible;     
+        display: block;
+        width: 30rem; 
+          
+    }
+
+    .bg-mobile {
+        visibility: visible;
+        display: block;
+
+        position: absolute;
+        bottom: -15rem;
+        border-radius: 10px 10px 0 0 ;
+        height: 100%;
+        width: 95%;
+        background: #dcecee;
+        opacity: .85;
+
+        
+        
+        
+    }
+    
+    .img-container {
+        z-index: 1;
+    }
+
+    .img-container > p { 
+            
+        width:80%; 
+        margin-top: 9rem;
+        font-size: 3rem;
+        font-weight: 400;
+        color: #1c6975;   
+        
+    }
+
+    .img-croppest-fotos {
+        visibility: hidden;
+        display: none;
+        
+        
+        
+    }
+
+    .pix-info  {
+        margin-top: 2rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .pix-info > span {
+
+        font-size: 4rem;
+        background: #f3f3f3;
+        color: #1c6975;
+        height: 100%;
+        font-weight: 600;
+    }
+
+    .pix-info > p {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1c6975;
+    }
+
+    .pix-info p > span {
+    
+        font-size: 3rem;
+        background: #f3f3f3;
+        color: #1c6975;
+    }
+
+}
+
+
+
+@media screen and  (max-width: 800px) {
 
 
     .main-home {
