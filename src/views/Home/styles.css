@@ -6,7 +6,7 @@
     background: linear-gradient(to right, #1c6975 , #2abfd5);
 
     font-family: 'Yaldevi', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 2rem;
     color: #1c6975;
     
@@ -60,7 +60,8 @@
 .img-container > p {
     margin: 1rem;
     text-align: center;
-    background: #dcecee;
+    color: #dcecee;
+    
     border-radius: 10px 0 10px 0;
     padding: .8rem;
     width: 50rem; 
@@ -99,10 +100,23 @@
     color: #1c6975;
 }
 
+.bg-mobile {
+    visibility: hidden;
+    display: none;
+}
+
 @media only screen and  (max-width: 1410px) {
+
+
     .main-home {
+        
         display: flex;
         flex-direction: column;
+
+        
+
+        
+        
     }
 
     .img-croppest {
@@ -116,35 +130,72 @@
     }
 
     .croppset-right{
+        
+        position: relative;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: 100vh;
+
+        background-image: url('./assets/croppest-cortado-s-logo.png');
+        background-size: cover;    
+        background-repeat: no-repeat, repeat;
+
+        z-index: 1;
+
+        overflow: hidden;
+        
     
     
     }
 
     .img-croppest-logo  {  
-        position: absolute;
-        top: 7rem;
-        left: -1rem;
+        position: relative;
+        margin-bottom: 3rem;
         visibility: visible;     
         display: block;
-        width: 10rem;    
+        width: 30rem; 
+        opacity: 1;   
     }
 
+    .bg-mobile {
+        visibility: visible;
+        display: block;
+
+        position: absolute;
+        bottom: -3.4rem;
+        border-radius: 10px 10px 0 0 ;
+        height: 100%;
+        width: 95%;
+        background: #dcecee;
+        opacity: .8;
+
+        
+        
+        
+    }
     
+    .img-container {
+        z-index: 1;
+    }
 
     .img-container > p { 
-        margin-bottom: 2rem;      
-        width:50%; 
-        font-size: 1rem;   
+        margin-bottom: 3rem;      
+        width:80%; 
+
+        font-size: 3rem;
+        font-weight: 400;
+        color: #1c6975;   
+        
     }
 
     .img-croppest-fotos {
-        width: 80%; 
+        visibility: hidden;
+        display: none;
+        
         
         
     }
@@ -160,13 +211,22 @@
 
     .pix-info > span {
 
-        font-size: 2rem;
+        font-size: 3rem;
         background: #f3f3f3;
         color: #1c6975;
+        height: 100%;
+        font-weight: 600;
     }
-    .pix-info p >span {
+
+    .pix-info > p {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #1c6975;
+    }
+
+    .pix-info p > span {
     
-        font-size: 1.5rem;
+        font-size: rem;
         background: #f3f3f3;
         color: #1c6975;
     }
