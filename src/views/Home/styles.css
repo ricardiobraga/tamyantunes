@@ -136,13 +136,27 @@
     }
 
     .img-container > p {       
-        width: 20rem;    
+        width: 17rem; 
+        font-size: 1rem;   
     }
 
     .img-croppest-fotos {
-        width: 30rem; 
+        width: 20rem; 
         
         
+    }
+
+    .pix-info > span {
+
+        font-size: 2rem;
+        background: #f3f3f3;
+        color: #1c6975;
+    }
+    .pix-info p >span {
+    
+        font-size: 1.5rem;
+        background: #f3f3f3;
+        color: #1c6975;
     }
 
 }
