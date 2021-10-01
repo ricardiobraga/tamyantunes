@@ -2,7 +2,7 @@ import React from 'react'
 
 import Home from './views/Home'
 import Header from './components/Header'
-import Gorro from './views/Gorro'
+import Contato from './views/Contato'
 
 const App = () => {
     return (
@@ -11,7 +11,7 @@ const App = () => {
         
        <main>
            <Home />
-           <Gorro />
+           <Contato />
        </main>
        </>
     )

@@ -1,0 +1,89 @@
+.main-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+
+    font-family: 'Yaldevi', sans-serif;
+    font-weight: 400;
+    
+    color: #17468b;
+    text-decoration: none;
+}
+
+.img-avatar {
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    height: 10rem;
+}
+
+.icon {
+    height: 10px;
+}
+
+.content-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-bottom: 12rem;
+
+    
+}
+
+.content-contato a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1rem;
+
+    gap: 1rem;
+
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #17468b;
+}
+
+.contato-footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.contato-footer img {
+    width: 100%;
+}
+
+
+@media screen and  (max-width: 800px) {
+    
+    .content-contato a {
+        
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+        
+    }
+
+    .content-contato {
+       
+    
+        margin-bottom: 5rem;
+    
+        
+    }
+
+}
+

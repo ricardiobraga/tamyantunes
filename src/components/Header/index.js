@@ -13,8 +13,8 @@ const Header = () => {
         <header>
             <nav className="page-nav" onClick={() => scroll.scrollToTop()}>                
                 <img className="logo-tamy" src={logo} alt='logo' />
-                <p onClick={() => scroll.scrollToTop()}> Croppest </p>
-                <Link to="gorro" smooth={true} duration={500}> Gorro </Link>
+                <p className="link" onClick={() => scroll.scrollToTop()}> Croppest </p>
+                <Link className="link" to="contato" smooth={true} duration={500}> Contato </Link>
                 
             </nav>
         </header>

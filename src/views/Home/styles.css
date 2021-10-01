@@ -3,12 +3,13 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to right, #1c6975 , #2abfd5);
+    background: #fff;
+    /* background: linear-gradient(to right, #1c6975 , #2abfd5); */
 
     font-family: 'Yaldevi', sans-serif;
     font-weight: 400;
     font-size: 2rem;
-    color: #1c6975;
+    color: #17468b;
     
     
 
@@ -17,6 +18,8 @@
     background-size: contain;    
     background-repeat: no-repeat, repeat; */
 }
+
+
 
 .img-croppest {
     height: 100vh;
@@ -57,16 +60,30 @@
     display: none;  
 }
 
-.img-container > p {
+.title {
     margin: 1rem;
     text-align: center;
-    color: #dcecee;
     
-    border-radius: 10px 0 10px 0;
-    padding: .8rem;
+    
+    
+    
     width: 50rem; 
+
+    font-size: 2.5rem;
+    font-weight: 600;
     
-    
+    z-index: 2;
+}
+
+.subtitle {
+    margin-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 200; 
+    width: 40vw;
+
+    z-index: 2;
+
     
 }
 
@@ -76,28 +93,65 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    vertical-align: middle;
     gap: .5rem;
 }
 
-.pix-info p {
+.pix-info div p {
    
-    margin: 0;
-    
+    margin: 0;    
     
     font-size: 1rem;
-    color: #f3f3f3;
+    font-weight: 600;
+    
 }
 .pix-info > span {
-
-    font-size: 3rem;
-    background: #f3f3f3;
-    color: #1c6975;
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    background: #f3d78b;   
+    
 }
-.pix-info p >span {
+
+
+
+.pix-value {
+    font-size: 1rem;
+    
+}
+.pix-value > span {
+    font-size: 3rem;
+    font-weight: 600;
+    
+}
+
+.pix-info div > div {
+    cursor: pointer;
 
     font-size: 2rem;
-    background: #f3f3f3;
-    color: #1c6975;
+    background: #f787da;
+    font-weight: 200;
+    
+}
+
+.pix-info div > a {
+    cursor: pointer;
+    text-decoration: none;
+
+    font-size: 2rem;
+    background: #f787da;
+    font-weight: 200;
+    color: #17468b;
+    
+}
+
+.picpay {
+    cursor: pointer;
+    
+
 }
 
 .bg-mobile {
@@ -105,19 +159,25 @@
     display: none;
 }
 
+.img-bg-squares {
+    position: fixed;
+    top: -15rem;
+    right: -18rem;
+    height: 40rem;
+}
+
+
+
+
 @media screen and  (max-width: 1024px) {
 
 
     .main-home {
         
         display: flex;
-        flex-direction: column;
-
-        
-
-        
-        
+        flex-direction: column;  
     }
+
 
     .img-croppest {
         height: 50vh;
@@ -182,54 +242,77 @@
         z-index: 1;
     }
 
-    .img-container > p { 
-            
-        width:80%; 
-        margin-top: 9rem;
-        font-size: 3rem;
-        font-weight: 400;
-        color: #1c6975;   
-        
-    }
+
 
     .img-croppest-fotos {
         visibility: hidden;
         display: none;
-        
-        
-        
     }
 
-    .pix-info  {
-        margin-top: 2rem;
+    .title {
+        margin-top: 20rem;
+        text-align: center;
         
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: .5rem;
-    }
+        
 
-    .pix-info > span {
-
-        font-size: 4rem;
-        background: #f3f3f3;
-        color: #1c6975;
-        height: 100%;
-        font-weight: 600;
-    }
-
-    .pix-info > p {
-        font-size: 1rem;
-        font-weight: 600;
-        color: #1c6975;
-    }
-
-    .pix-info p > span {
+         
     
         font-size: 3rem;
-        background: #f3f3f3;
-        color: #1c6975;
+        font-weight: 600;
+        
+        z-index: 2;
     }
+    
+    .subtitle {
+        margin-bottom: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 200; 
+        width: 70%;
+    
+        z-index: 2;
+    
+        
+    }
+    
+
+    .pix-info  {
+        margin-top: 5rem; }
+
+    .pix-value {
+         font-size: 1.5rem;
+            
+    }
+    .pix-value > span {
+         font-size: 5rem;
+         font-weight: 600;
+            
+    }    
+
+    .pix-info div > span {
+
+        font-size: 3.5rem;
+        background: #f787da;
+        color: #17468b;
+        height: 100%;
+        font-weight: 200;
+    }
+    
+
+    .pix-info div > p {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #17468b;
+    }
+
+    .pix-info div > a {
+    
+        font-size: 3rem;
+        background: #f787da;
+        color: #17468b;
+    }
+
+
 
 }
 
@@ -242,11 +325,8 @@
         
         display: flex;
         flex-direction: column;
-
         
 
-        
-        
     }
 
     .img-croppest {
@@ -274,7 +354,7 @@
         background-size: cover;    
         background-repeat: no-repeat, repeat;
 
-        z-index: 1;
+        z-index: 0;
 
         overflow: hidden;
         
@@ -287,7 +367,7 @@
         top: 3rem;
         visibility: visible;     
         display: block;
-        width: 15rem; 
+        width: 10rem; 
           
     }
 
@@ -296,7 +376,7 @@
         display: block;
 
         position: absolute;
-        bottom: -10rem;
+        bottom: -7rem;
         border-radius: 10px 10px 0 0 ;
         height: 100%;
         width: 95%;
@@ -312,13 +392,25 @@
         z-index: 1;
     }
 
-    .img-container > p { 
-            
-        width:80%; 
-        margin-top: 9rem;
+    .title {
+        margin-top: 8rem;
+        text-align: center;      
+        
         font-size: 1.5rem;
-        font-weight: 400;
-        color: #1c6975;   
+        font-weight: 600;
+        
+        z-index: 2;
+    }
+    
+    .subtitle {
+        margin-bottom: 1;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: 200; 
+        width: 70%;
+    
+        z-index: 2;
+    
         
     }
 
@@ -331,34 +423,48 @@
     }
 
     .pix-info  {
-        margin-top: 2rem;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: .5rem;
+        margin-top: 1rem; }
+
+    .pix-value {
+         font-size: 1rem;            
+    }
+    .pix-value span {
+         font-size: 3rem;            
     }
 
-    .pix-info > span {
 
-        font-size: 2rem;
-        background: #f3f3f3;
-        color: #1c6975;
-        height: 100%;
-        font-weight: 600;
-    }
-
-    .pix-info > p {
+    .pix-info div {
         font-size: 1rem;
+    
+    }
+   
+
+    .pix-info div > div {
+
+        font-size: 1rem;
+        background: #f787da;
+        color: #17468b;
+        height: 100%;
+        font-weight: 200;
+    }
+    
+
+    .pix-info div > p {
+        font-size: .8rem;
         font-weight: 600;
-        color: #1c6975;
+        color: #17468b;
     }
 
-    .pix-info p > span {
+    .pix-info div > a {
     
-        font-size: 1.2rem;
-        background: #f3f3f3;
-        color: #1c6975;
+        font-size: 1rem;
+        background: #f787da;
+        color: #17468b;
+    }
+
+    .img-bg-squares {
+        display: none;
+        visibility: hidden;
     }
 
 }
