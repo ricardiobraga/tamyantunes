@@ -81,7 +81,7 @@ const Home = () => {
                                     PicPay: 
                                 </p>
 
-                                <a className="picpay" href={"http://picpay.me/tamyantunes/0,50"} target="_blank" rel="noopener noreferrer">@tamyantunes </a>
+                                <a className="picpay" href={"http://picpay.me/tamyantunes/20,00"} target="_blank" rel="noopener noreferrer">@tamyantunes </a>
                             </div>                        
                                                       
                         </div>
